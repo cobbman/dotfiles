@@ -109,13 +109,12 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste up-line-or-search down-line-or-s
 # Article on customizing zsh: https://timjames.dev/blog/overhaul-your-terminal-with-zsh-plugins-more-3oag
 
 # ALIASES:
+alias ll="ls -ahl"
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' # manage dotfiles with git working tree
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
-alias ll="ls -ahl"
 alias gitconfig="vim ~/.gitconfig"
 alias dockerstop="sudo docker stop $(docker ps -a -q)"
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' # manage dotfiles with git working tree
-alias code="NVIM_APPNAME=astronvim nvim" # Using AstroNvim without overwriting nvim
 
 # Node version manager
 export NVM_DIR="$HOME/.nvm"
@@ -125,3 +124,31 @@ export NVM_DIR="$HOME/.nvm"
 # p10K theme for zsh. To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+##### VIMS: NeoVim selector #####
+# Credit: https://youtu.be/LkHjJlSgKZY?si=VzAz75PI2_CaQ-3X
+alias nvim-lazy="NVIM_APPNAME=LazyVim nvim"
+alias nvim-kick="NVIM_APPNAME=kickstart nvim"
+alias nvim-chad="NVIM_APPNAME=NvChad nvim"
+alias nvim-astro="NVIM_APPNAME=AstroNvim nvim"
+alias nvim-lunar="NVIM_APPNAME=LunarVim nvim"
+
+function nvims() {
+  items=("default" "kickstart" "LazyVim" "NvChad" "AstroNvim" "LunarVim")
+  config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config " --height=~50% --layout=reverse --border --exit-0)
+  if [[ -z $config ]]; then
+    echo "Nothing selected"
+    return 0
+  elif [[ $config == "default" ]]; then
+    config=""
+  fi
+  NVIM_APPNAME=$config nvim $@
+}
+
+bindkey -s ^a "nvims\n"
+
+##### END VIMS: NeoVim Selector #####
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # Fuzzy Finder in terminal
+
+# Path for updated version of NeoVim
+export PATH="$PATH:/opt/nvim-linux64/bin"
