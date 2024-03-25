@@ -2,7 +2,7 @@
 
 My configuration files
 
-# Setting up a new machine
+## Setting up a new machine
 
 Credit: https://medium.com/@simontoth/best-way-to-manage-your-dotfiles-2c45bb280049
 
@@ -21,7 +21,7 @@ Credit: https://medium.com/@simontoth/best-way-to-manage-your-dotfiles-2c45bb280
 **Checkout**
 `dotfiles checkout`
 
-# Apps Installed
+## Apps Installed
 
 - zsh, oh my zsh
 - NeoVim, with come configuration:
