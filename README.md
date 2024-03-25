@@ -24,7 +24,7 @@ Credit: https://medium.com/@simontoth/best-way-to-manage-your-dotfiles-2c45bb280
 ## Apps Installed
 
 - zsh, oh my zsh
-- NeoVim, with come configuration:
+- NeoVim, with some configurations:
   - AstroNvim
   - LazyVim
   - LunarVim
