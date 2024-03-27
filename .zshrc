@@ -106,7 +106,7 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' # man
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias gitconfig="vim ~/.gitconfig"
-alias dockerstop="sudo docker stop $(docker ps -a -q)"
+alias dockerstop="sudo docker -aq | xargs docker stop"
 
 # Node version manager
 export NVM_DIR="$HOME/.nvm"
