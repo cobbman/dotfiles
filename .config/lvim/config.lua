@@ -7,6 +7,10 @@
 -- Angular support
 -- Ref: https://www.lunarvim.org/docs/features/supported-frameworks/angular
 require("lvim.lsp.manager").setup("angularls")
+vim.opt.wrap = true
+
+
+-- PLUGINS
 
 lvim.plugins = {
 
