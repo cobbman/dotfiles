@@ -29,3 +29,10 @@ Credit: https://medium.com/@simontoth/best-way-to-manage-your-dotfiles-2c45bb280
   - LazyVim
   - LunarVim
 - fzf: fuzzy find files
+- "vims" for choosing which version of vim to use (see .zshrc)
+
+## Fonts
+
+Source for developer friendly fonts: [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
+
+- ProFont IIx Nerd Font Mono (currenly my fav)
