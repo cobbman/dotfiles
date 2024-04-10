@@ -7,6 +7,8 @@
 -- Angular support
 -- Ref: https://www.lunarvim.org/docs/features/supported-frameworks/angular
 require("lvim.lsp.manager").setup("angularls")
+
+-- wrap text
 vim.opt.wrap = true
 
 
@@ -16,13 +18,33 @@ lvim.plugins = {
 
   { "nvim-treesitter/nvim-treesitter-angular" },
   {
-    'wfxr/minimap.vim',
-    build = "cargo install --locked code-minimap",
-    -- cmd = {"Minimap", "MinimapClose", "MinimapToggle", "MinimapRefresh", "MinimapUpdateHighlight"},
+    "ggandor/leap.nvim",
+    name = "leap",
     config = function()
-      vim.cmd("let g:minimap_width = 10")
-      vim.cmd("let g:minimap_auto_start = 1")
-      vim.cmd("let g:minimap_auto_start_win_enter = 1")
+      require("leap").add_default_mappings()
+    end,
+  },
+  {
+    "nacro90/numb.nvim",
+    event = "BufRead",
+    config = function()
+    require("numb").setup {
+      show_numbers = true, -- Enable 'number' for the window while peeking
+      show_cursorline = true, -- Enable 'cursorline' for the window while peeking
+    }
+    end,
+  },
+  {
+    "windwp/nvim-ts-autotag",
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end,
+  },
+  {
+  "folke/todo-comments.nvim",
+    event = "BufRead",
+    config = function()
+      require("todo-comments").setup()
     end,
   },
 
