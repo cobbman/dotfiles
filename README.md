@@ -21,10 +21,15 @@ Credit: https://medium.com/@simontoth/best-way-to-manage-your-dotfiles-2c45bb280
 **Checkout**
 `dotfiles checkout`
 
+**Add nvim (submodule)**
+`dotfiles submodule init`
+`dotfiles submodule update`
+
 ## Apps Installed
 
 - zsh, oh my zsh
 - NeoVim, with some configurations:
+  - nvim (kickstart - my own configs)
   - AstroNvim
   - LazyVim
   - LunarVim
