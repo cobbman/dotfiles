@@ -42,12 +42,18 @@ return {
       },
     },
   },
-  -- configure LazyVim to load catppuccin theme
+  {
+    "folke/tokyonight.nvim",
+    lazy = true,
+    opts = { style = "night" },
+  },
+  -- configure LazyVim to load theme
   {
     "LazyVim/LazyVim",
     opts = {
-      -- color variations: catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+      -- catppuccin color variations: catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
       colorscheme = "catppuccin-macchiato",
+      -- colorscheme = "tokyonight",
     },
   },
 }
