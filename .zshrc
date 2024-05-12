@@ -83,6 +83,9 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste up-line-or-search down-line-or-s
 
 # User configuration
 
+# Ansible PATH
+export PATH="$HOME/Library/Python/3.10/bin:$PATH"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -120,7 +123,7 @@ alias nvim-lazy="NVIM_APPNAME=LazyVim nvim"
 alias nvim-kick="NVIM_APPNAME=kickstart nvim"
 alias nvim-chad="NVIM_APPNAME=NvChad nvim"
 alias nvim-astro="NVIM_APPNAME=AstroNvim nvim"
-alias nvim-lunar="NVIM_APPNAME=lvim nvim"
+alias nvim-lunar="NVIM_APPNAME=LunarVim nvim"
 
 function nvims() {
   items=("default" "kickstart" "LazyVim" "NvChad" "AstroNvim" "LunarVim")
