@@ -45,5 +45,5 @@ Source for developer friendly fonts: [Nerd Fonts](https://www.nerdfonts.com/font
 # NeoVim Install
 
 Note: install using "AppImage" for best results
-[NeoVim Install Page[(https://github.com/neovim/neovim/blob/master/INSTALL.md#appimage-universal-linux-package)
+[NeoVim Install Page](https://github.com/neovim/neovim/blob/master/INSTALL.md#appimage-universal-linux-package)
 
