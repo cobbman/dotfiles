@@ -52,8 +52,8 @@ return {
     "LazyVim/LazyVim",
     opts = {
       -- catppuccin color variations: catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
-      -- colorscheme = "catppuccin-macchiato",
-      colorscheme = "tokyonight",
+      colorscheme = "catppuccin-mocha",
+      -- colorscheme = "tokyonight",
     },
   },
 }
