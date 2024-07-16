@@ -31,7 +31,7 @@ Credit: https://medium.com/@simontoth/best-way-to-manage-your-dotfiles-2c45bb280
 - NeoVim, with some configurations:
   - nvim (kickstart - my own configs)
   - AstroNvim
-  - LazyVim
+  - **LazyVim (preferred)**
   - LunarVim
 - fzf: fuzzy find files
 - "vims" for choosing which version of vim to use (see .zshrc)
@@ -41,3 +41,9 @@ Credit: https://medium.com/@simontoth/best-way-to-manage-your-dotfiles-2c45bb280
 Source for developer friendly fonts: [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
 
 - ProFont IIx Nerd Font Mono (currenly my fav)
+
+# NeoVim Install
+
+Note: install using "AppImage" for best results
+[NeoVim Install Page[(https://github.com/neovim/neovim/blob/master/INSTALL.md#appimage-universal-linux-package)
+

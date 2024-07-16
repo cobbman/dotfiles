@@ -101,6 +101,9 @@ export PATH="$HOME/Library/Python/3.10/bin:$PATH"
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# NeoVim Path (using AppImage)
+export PATH="$PATH:/opt/nvim/"
+
 # Article on customizing zsh: https://timjames.dev/blog/overhaul-your-terminal-with-zsh-plugins-more-3oag
 
 # ALIASES:
