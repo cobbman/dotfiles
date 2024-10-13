@@ -149,3 +149,10 @@ bindkey -s ^a "nvims\n"
 
 # Path for updated version of NeoVim
 export PATH="$PATH:/opt/nvim-linux64/bin"
+
+# Path for Fabric AI => https://github.com/danielmiessler/fabric?tab=readme-ov-file#Installation
+# Golang environment variables
+export GOROOT=$(brew --prefix go)/libexec
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
+
