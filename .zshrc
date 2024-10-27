@@ -81,7 +81,11 @@ source $ZSH/oh-my-zsh.sh
 ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste up-line-or-search down-line-or-search expand-or-complete accept-line push-line-or-edit)
 
 
-# User configuration
+######################
+# User configuration #
+######################
+
+source ~/.zshrc_mac
 
 # Ansible PATH
 export PATH="$HOME/Library/Python/3.10/bin:$PATH"
@@ -155,4 +159,3 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 export GOROOT=$(brew --prefix go)/libexec
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
-
