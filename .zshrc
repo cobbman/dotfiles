@@ -155,7 +155,7 @@ bindkey -s ^a "nvims\n"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # Fuzzy Finder in terminal
 
 # Path for updated version of NeoVim
-export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:/opt/nvim/"
 
 # Path for Fabric AI => https://github.com/danielmiessler/fabric?tab=readme-ov-file#Installation
 # Golang environment variables
