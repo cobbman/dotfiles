@@ -24,7 +24,7 @@ Credit: https://medium.com/@simontoth/best-way-to-manage-your-dotfiles-2c45bb280
 #### OhMyZsh Plugins
 
 1. **zsh-autosuggestions**: Follow these instructions => https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
-2. **zsh-syntax-highlighting**: Follow these instructions => https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+2. **zsh-syntax-highlighting**: Follow these instructions => [use the oh-my-zsh plugin manager instructions](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
 
 #### IDE (LazyVim)
 
