@@ -85,7 +85,7 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste up-line-or-search down-line-or-s
 # User configuration #
 ######################
 
-source ~/.zshrc_mac
+[ -f ~/.zshrc_mac ] && source ~/.zshrc_mac
 
 # Ansible PATH
 export PATH="$HOME/Library/Python/3.10/bin:$PATH"
@@ -110,7 +110,10 @@ export PATH="$PATH:/opt/nvim/"
 
 # Article on customizing zsh: https://timjames.dev/blog/overhaul-your-terminal-with-zsh-plugins-more-3oag
 
-# ALIASES:
+######################
+#      ALIASES       #
+######################
+
 alias ll="ls -ahl"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' # manage dotfiles with git working tree
 alias zshconfig="vim ~/.zshrc"
