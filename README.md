@@ -13,6 +13,7 @@ Credit: https://medium.com/@simontoth/best-way-to-manage-your-dotfiles-2c45bb280
 3. **Clone repo** `git clone --bare git@github.com:cobbman/dotfiles.git $HOME/.dotfiles`
 4. **Config repo** `dotfiles config --local status.showUntrackedFiles no`
 5. **Checkout** `dotfiles checkout`
+6. **Config** In `~/.dotfiles/config` add my personal user.name and user.email
 
 **Add nvim (submodule)**
 `dotfiles submodule init`
