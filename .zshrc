@@ -158,7 +158,8 @@ bindkey -s ^a "nvims\n"
 export PATH="$PATH:/opt/nvim/"
 
 # Path for Fabric AI => https://github.com/danielmiessler/fabric?tab=readme-ov-file#Installation
+# TODO: move this to a mac-only script
 # Golang environment variables
-export GOROOT=$(brew --prefix go)/libexec
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
+# export GOROOT=$(brew --prefix go)/libexec
+# export GOPATH=$HOME/go
+# export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
