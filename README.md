@@ -30,6 +30,7 @@ Credit: https://medium.com/@simontoth/best-way-to-manage-your-dotfiles-2c45bb280
 
 1. **NeoVim**: usually "AppImage" option gives best results => [NeoVim Install Page](https://github.com/neovim/neovim/blob/master/INSTALL.md#appimage-universal-linux-package)
 1. **LazyVim**: Go here for instructions => https://lazyvim.org
+2. LazyVim: run `:checkhealth` after setup to make sure everything is a-oK
 
 ## Fonts
 
