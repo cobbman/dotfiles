@@ -121,6 +121,7 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias gitconfig="vim ~/.gitconfig"
 alias dockerstop="sudo docker -aq | xargs docker stop"
 alias lazy="NVIM_APPNAME=LazyVim nvim"
+alias nvim="NVIM_APPNAME=LazyVim nvim"
 
 # Node version manager
 export NVM_DIR="$HOME/.nvm"
