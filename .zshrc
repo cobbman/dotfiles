@@ -114,7 +114,8 @@ export PATH="$PATH:/opt/nvim/"
 #      ALIASES       #
 ######################
 
-alias ll="ls -ahl"
+alias ll="ls -hl"
+alias lla="ls -ahl"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' # manage dotfiles with git working tree
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
