@@ -86,6 +86,7 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste up-line-or-search down-line-or-s
 ######################
 
 [ -f ~/.zshrc_mac ] && source ~/.zshrc_mac
+[ -f ~/.zshrc_linux ] && source ~/.zshrc_linux
 
 # Ansible PATH
 export PATH="$HOME/Library/Python/3.10/bin:$PATH"
@@ -114,13 +115,15 @@ export PATH="$PATH:/opt/nvim/"
 #      ALIASES       #
 ######################
 
-alias ll="ls -ahl"
+alias ll="ls -hl"
+alias lla="ls -ahl"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' # manage dotfiles with git working tree
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias gitconfig="vim ~/.gitconfig"
 alias dockerstop="sudo docker -aq | xargs docker stop"
 alias lazy="NVIM_APPNAME=LazyVim nvim"
+alias nvim="NVIM_APPNAME=LazyVim nvim"
 
 # Node version manager
 export NVM_DIR="$HOME/.nvm"
@@ -163,3 +166,9 @@ export PATH="$PATH:/opt/nvim/"
 # export GOROOT=$(brew --prefix go)/libexec
 # export GOPATH=$HOME/go
 # export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+
