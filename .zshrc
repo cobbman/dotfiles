@@ -1,3 +1,5 @@
+export LANG=C.utf8
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -73,13 +75,9 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git dnf gradle ng npm nvm tmux docker colored-man-pages zsh-autosuggestions zsh-syntax-highlighting) # Syntax highlighting must be the last one in the list
+plugins=(git npm nvm tmux docker colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
-
-
-ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste up-line-or-search down-line-or-search expand-or-complete accept-line push-line-or-edit)
-
 
 ######################
 # User configuration #
@@ -132,8 +130,4 @@ export NVM_DIR="$HOME/.nvm"
 
 # Path for updated version of NeoVim
 export PATH="$PATH:/opt/nvim/"
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
-
 
